@@ -33,4 +33,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-    
+- task: VSTest@2
+  displayName: 'Run Unit Tests'
+  inputs:
+    testAssemblyVer2: |
+     **\$(BuildConfiguration)\*test*.dll
+     **\$(BuildConfiguration)\**\*test*.dll
+     !**\*Microsoft.VisualStudio.TestPlatform*
+     !**\obj\**
