@@ -31,8 +31,8 @@ namespace Test
 
         public void Login1()
         {
-            Email.SendKeys("9028809305");
-            Password.SendKeys("jocky1234#");
+            Email.SendKeys("tcpratiksha@gmail.com");
+            Password.SendKeys("abcd");
             Login.Click();
         }
         ///
