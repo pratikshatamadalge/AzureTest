@@ -23,7 +23,6 @@ namespace Test
             // driver = new ChromeDriver();
 
             DesiredCapabilities caps = new DesiredCapabilities();
-
             caps.SetCapability("os", "Windows");
             caps.SetCapability("os_version", "10");
             caps.SetCapability("browser", "Chrome");
@@ -35,8 +34,6 @@ namespace Test
             driver = new RemoteWebDriver(new Uri("https://hub-cloud.browserstack.com/wd/hub/"), caps);
             driver.Navigate().GoToUrl("http://www.facebook.com");
             Console.WriteLine(driver.Title);
-
-            
         }
 
         [Test]
